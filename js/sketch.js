@@ -7,8 +7,8 @@ let board = [
 let cellWidth; // = (width / 3);
 let cellHeight; // = (height / 3);
 
-let ai = "X";
-let human = "O";
+let ai = "O";
+let human = "X";
 let currentPlayer = human;
 
 function setup() {
