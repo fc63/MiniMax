@@ -8,6 +8,7 @@ function bestMove() {
   // AI makes its turn
   let bestScore = -Infinity;
   let move;
+  currentPlayer = human;
 
   for (let row = 0; row < 3; row++) {
     for (let col = 0; col < 3; col++) {
@@ -25,7 +26,6 @@ function bestMove() {
     }
   }
   board[move.row][move.col] = ai;
-  currentPlayer = human;
 }
 
 function minimax(board, depth, isMaximizer) {
